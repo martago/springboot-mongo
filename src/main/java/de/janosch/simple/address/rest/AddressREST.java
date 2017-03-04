@@ -4,18 +4,16 @@ import de.janosch.simple.address.Address;
 import de.janosch.simple.address.rest.resource.V1AddressResource;
 import de.janosch.simple.address.service.AddressService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 /**
  * AddressREST
  */
+@Component
 public class AddressREST implements V1AddressResource {
 
-    private AddressService addressService;
-
     @Autowired
-    public AddressREST(AddressService addressService) {
-        this.addressService = addressService;
-    }
+    private AddressService addressService;
 
     @Override
     public GetV1AddressResponse getV1Address() throws Exception {
@@ -40,6 +38,5 @@ public class AddressREST implements V1AddressResource {
 
         return PutV1AddressByAddressIdResponse.withNotFound();
     }
-
-
+    
 }
