@@ -1,0 +1,13 @@
+---
+version: "3"
+services:
+  mongo_address:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+  springboot:
+    expose: 
+      - "8080"
+    image: "janosch/simple-address"
+    ports: 
+      - "8080:8080"

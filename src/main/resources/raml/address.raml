@@ -1,0 +1,34 @@
+description: get all addresses.
+get:
+  description: get all addresses.
+  responses:
+    200:
+      body:
+        application/json:
+          schema: address_list
+post:
+  description: post one address.
+  body:
+    application/json:
+      schema: address
+  responses:
+    200:
+      body:
+        application/json:
+          schema: address
+/{addressId}:
+  get:
+    description: get one address.
+    responses:
+      200:
+        body:
+          application/json:
+            schema: address
+  put:
+    description: change one address.
+    body:
+      application/json:
+        schema: address
+    responses:
+      200:
+      404:

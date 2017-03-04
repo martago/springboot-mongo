@@ -1,0 +1,11 @@
+#%RAML 0.8
+---
+title: "API Dokumentation"
+version: v1
+baseUri: http://localhost:8080/{version}
+
+schemas:
+  - address_list: !include schema/address_list.json
+  - address: !include schema/address.json
+
+/v1/address: !include address.raml

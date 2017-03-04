@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "description": "Ein Profil",
+  "javaType": "de.janosch.simple.address.Address",
+  "additionalProperties": true,
+  "properties": {
+    "id": {
+      "type": "string",
+      "required": false
+    },
+    "street": {
+      "type": "string",
+      "required": true
+    },
+    "postcode": {
+      "type": "string",
+      "required": true
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "firstname": {
+      "type": "string",
+      "required": true
+    },
+    "lastname": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

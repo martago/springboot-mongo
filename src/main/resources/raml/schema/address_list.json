@@ -1,0 +1,8 @@
+{
+  "type": "array",
+  "description": "list of addresses",
+  "additionalProperties": true,
+  "items": {
+    "$ref": "address"
+  }
+}
