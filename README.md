@@ -3,6 +3,7 @@ SpringBoot MongoDB Projekt
 Ziel dieses Projekt war es, SpringBoot mit MongoDB zu verknüpfen.
 Dafür wurde ein einfaches Adressmanagementsystem aufgesetzt.
 Für die REST-Beschreibung wurde RAML verwendet.
+Für Tests wurde Fongo implementiert.
 
 # Dokumentation
 
@@ -25,3 +26,4 @@ curl -H "Content-Type: application/json" -X POST -d "{ \"city\": \"MusterStadt\"
 - RAML
 - Spring Boot
 - MongoDB
+- Fongo

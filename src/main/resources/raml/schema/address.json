@@ -1,7 +1,7 @@
 {
   "type": "object",
   "description": "Ein Profil",
-  "javaType": "de.janosch.simple.address.Address",
+  "javaType": "de.janosch.springbootmongo.Address",
   "additionalProperties": true,
   "properties": {
     "id": {

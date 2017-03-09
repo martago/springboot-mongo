@@ -1,8 +1,8 @@
-package de.janosch.simple.address.rest;
+package de.janosch.springbootmongo.rest;
 
-import de.janosch.simple.address.Address;
-import de.janosch.simple.address.rest.resource.V1AddressResource;
-import de.janosch.simple.address.service.AddressService;
+import de.janosch.springbootmongo.Address;
+import de.janosch.springbootmongo.rest.resource.V1AddressResource;
+import de.janosch.springbootmongo.service.AddressService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

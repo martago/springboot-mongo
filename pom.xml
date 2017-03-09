@@ -2,8 +2,8 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>de.janosch.simple.address</groupId>
-  <artifactId>simple-address</artifactId>
+  <groupId>de.janosch.springbootmongo</groupId>
+  <artifactId>springboot-mongo</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <!-- über jar -->
@@ -38,6 +38,13 @@
       <scope>test</scope>
     </dependency>
 
+    <!-- Fake in-memory mongo -->
+    <dependency>
+      <groupId>com.github.fakemongo</groupId>
+      <artifactId>fongo</artifactId>
+      <version>2.0.12</version>
+    </dependency>
+
   </dependencies>
 
   <build>
@@ -54,7 +61,7 @@
         <artifactId>raml-jaxrs-maven-plugin</artifactId>
         <configuration>
           <sourceDirectory>${basedir}/src/main/resources/raml</sourceDirectory>
-          <basePackageName>de.janosch.simple.address.rest</basePackageName>
+          <basePackageName>de.janosch.springbootmongo.rest</basePackageName>
           <jaxrsVersion>2.0</jaxrsVersion>
           <useJsr303Annotations>false</useJsr303Annotations>
           <jsonMapper>jackson2</jsonMapper>

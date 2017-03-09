@@ -1,7 +1,7 @@
-package de.janosch.simple.address;
+package de.janosch.springbootmongo;
 
 
-import de.janosch.simple.address.rest.AddressREST;
+import de.janosch.springbootmongo.rest.AddressREST;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.springframework.stereotype.Component;
 

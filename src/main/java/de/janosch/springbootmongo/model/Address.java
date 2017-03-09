@@ -1,4 +1,4 @@
-package de.janosch.simple.address.model;
+package de.janosch.springbootmongo.model;
 
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;

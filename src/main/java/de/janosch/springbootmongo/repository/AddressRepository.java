@@ -1,6 +1,6 @@
-package de.janosch.simple.address.repository;
+package de.janosch.springbootmongo.repository;
 
-import de.janosch.simple.address.model.Address;
+import de.janosch.springbootmongo.model.Address;
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
